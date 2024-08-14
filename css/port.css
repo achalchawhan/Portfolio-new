@@ -1,8 +1,17 @@
-  
-        .col-1{
-            background-color: yellow;
-        }
-       
+/* .row{
+    border:2px solid rgb(200, 27, 27);
+}
+.container-fluid{
+    border: 2px solid black;
+}
+.col-2{
+    border: 2px solid rgb(25, 3, 3);
+}
+.col-6{
+    border: 3px solid navajowhite;
+} */
+
+
         header {
             position: fixed;
             top: 0;
@@ -45,28 +54,39 @@
             font-weight: bolder;
         }
         #col{
-            padding-left: 120px;
             line-height: 65px;
             font-size: 30px;
             font-weight: bolder;
         }
         .black {
             color: black;
+            margin-left: 230px;
+        }
+        #font{
+            font-size: 16px;
+        }
+        #font1{
+            font-size: 19px;
         }
         .blue {
             color: #007bff;;
         }
         #hello{
             /* text-align: center; */
-            padding: 120px;
+            padding-top: 170px;
+            padding-bottom: 120px;
+            padding-left: 250px;
+            padding-right: 10px;
         }
         #img2{
-            height: 500px;
+            height: 650px;
             width: 100%;
-            
+            position: relative;
         }
-        h3{
-            color:  #007bff;;
+        h6{
+            color:  #007bff;
+            font-weight: bolder;
+            font-size: 18px;
         }
         #red{
            
@@ -77,8 +97,9 @@
             margin-right: 100px;
         }
         #img3{
-            height: 500px;
-            /* width: 100%; */
+            height: 600px;
+            width: 100%;
+            
         }
        td{
         float: left;
@@ -107,27 +128,40 @@
         width: 100%;
        }
        #hello1{
-            /* text-align: center; */
-            padding-left: 120px;
-            padding-right: 120px;
-
+        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-left: 230px;
+        padding-right: 10px;
         }
+        #hello11{
+            padding-top: 50px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 202px;
+            }
+
+       
         #hello2{
             text-align: center;
-            padding-left: 120px;
-            padding-right: 120px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        #hello3{
+            padding-left: 250px;
             padding-top: 50px;
             padding-bottom: 50px;
         }
-        #hello3{
-            
-            padding-left: 120px;
-            padding-right: 120px;
+        #hello13{
+            padding-right: 160px;
+            padding-left: 30px;
             padding-top: 50px;
             padding-bottom: 50px;
         }
         #height{
-            height: 200px;
+            height: 220px;
+            
         }
         .footerBottom{
             float: right;
@@ -146,14 +180,36 @@
             padding: 40px;
         }
 
-       
+        
+        
+        .custom-btn {
+            background-color: transparent; /* No background color */
+            color: rgb(0, 0, 0); /* Set initial font color */
+            border: none; /* No border */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            outline: none;
+        }
+        
+        .custom-btn:focus,
+        .custom-btn:active {
+            color: #007bff; /* Change font color to blue when clicked */
+            outline: transparent; /* Remove the outline */
+            text-decoration: underline; /* Underline the text when clicked */
+            box-shadow: none;
+            text-underline-offset: 10px;
+        }
+        
+        
 
 
 
 
-       .custom-range {
+/* .custom-range {
   appearance: none;
-  width: 100%;
+  width: 80%;
   height: 8px;
   background: linear-gradient(to right, #007bff 50%, #ddd 50%);
   border-radius: 5px;
@@ -208,7 +264,74 @@
   height: 8px;
   cursor: pointer;
   background: transparent;
-}
+} */
+
+
+
+.custom-range {
+    appearance: none;
+    width: 80%;
+    height: 8px;
+    background: linear-gradient(to right, #007bff 70%, #ddd 70%);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.15s ease-in-out;
+  }
+  
+  .custom-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Make the thumb transparent */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow if any */
+  }
+  
+  .custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Make the thumb transparent */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow if any */
+  }
+  
+  .custom-range::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Make the thumb transparent */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow if any */
+  }
+  
+  .custom-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+  .custom-range::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+  .custom-range::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+
+
 .card.selected {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: scale(1.05);
@@ -252,6 +375,16 @@ header .col-2 {
 
 @media (max-width: 768px) {
 
+   table  #w{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size: 18px;
+    border: 0px;
+    }
+   
+    
     
 
     #col, .col-3 {
@@ -268,6 +401,32 @@ header .col-2 {
             padding: 30px;
             text-align: justify;
         }
+        .col-6 #style{
+            font-size: 33px;
+        }
+        .col-6 #style1{
+            font-size: 35px;
+            
+        }
+        #hello11{
+            /* text-align: center; */
+            padding: 30px;
+            text-align: justify;
+           
+        }
+        #hello13{
+            padding: 30px;
+        }
+        
+        
+}
+
+#style{
+    font-size: 49px;
+}
+#style1{
+    font-size: 56px;
+    
 }
 
 a {
@@ -287,6 +446,7 @@ header {
     h1{
         font-size: 35px;
     }
+   
 }
 @media (max-width: 768px) {
     #about .row > .col-6 {
@@ -296,6 +456,7 @@ header {
     #about .col-6 img {
         display: none; /* Hide the image */
     }
+   
     
 }
 
@@ -351,6 +512,55 @@ header {
         font-weight: 1000;
        
     }
+    .col-6 #vs{
+        width: auto;
+        height: 40px;
+        border: none; /* This removes the border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-top: 200px;
+        margin-left: -340px; 
+        position: absolute;
+        
+    }
+    
+    .col-6 #js{
+        width: auto;
+        height: 40px;
+        border: none; /* This removes the border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-top: 100px;
+        margin-left: -270px;
+        position: absolute;
+    }
+    .col-6 #python{
+        width: auto;
+        height: 20px;
+        border: none; /* This removes the border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-top: 150px;
+        margin-left: -120px; 
+        position: absolute;
+    }
+    .col-6 #css{
+        width: auto;
+        height: 35px;
+        border: none; /* This removes the border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-top: 70px;
+        margin-left: -30px; 
+        position: absolute;
+    }
+    
+    .col-6 #react{
+        width: auto;
+        height: 35px;
+        border: none; /* This removes the border */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        margin-top: 260px;
+        margin-left: -80px;
+        position: absolute;
+    }
+    
 
 
 
@@ -362,6 +572,122 @@ header {
         #img10{
             height: 1000px;
         }
+
+        
+        
     }
+    
+
+
+#vs{
+    width: auto;
+    height: 40px;
+    border: none; /* This removes the border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 200px;
+    margin-left: -650px;
+    position: absolute;
+    
+}
+
+#js{
+    width: auto;
+    height: 40px;
+    border: none; /* This removes the border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 100px;
+    margin-left: -530px;
+    position: absolute;
+}
+#python{
+    width: auto;
+    height: 20px;
+    border: none; /* This removes the border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 150px;
+    margin-left: -280px; 
+    position: absolute;
+}
+#css{
+    width: auto;
+    height: 35px;
+    border: none; /* This removes the border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 70px;
+    margin-left: -160px; 
+    position: absolute;
+}
+
+#react{
+    width: auto;
+    height: 35px;
+    border: none; /* This removes the border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 260px;
+    margin-left: -200px;
+    position: absolute;
+}
+
+
+
+#w{
+    padding-top: 45px;
+     padding-bottom: 45px; 
+     padding-left: 74px; 
+     padding-right: 74.4px;
+}
+
+#n{
+    font-size: 40px;
+}
+
+#background {
+    background: linear-gradient(to left, #e5f1fd 50%, transparent 50%);
+}
+
+
+
+
+
+
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    position: relative;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+ul li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: #007bff; /* Bullet color */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 35px;
+    margin-top: -15px;
+    margin-left: -2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+ul li::after {
+    content: "";
+    position: absolute;
+    left: 4px; /* Aligns with bullet point */
+    top: 20px; /* Start position of the line */
+    bottom: -40px; /* Extends line to the next item */
+    width: 2px;
+    background-color: #e7e8e8; /* Line color */
+}
+
+ul li:last-child::after {
+    display: none; /* Remove line after the last item */
+}
 
 
