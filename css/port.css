@@ -79,9 +79,13 @@
             padding-right: 10px;
         }
         #img2{
-            height: 650px;
+            height: 600px;
             width: 100%;
-            position: relative;
+            /* position: relative; */
+            opacity: 1; 
+
+            /* border: 2px solid mediumaquamarine; */
+            
         }
         h6{
             color:  #007bff;
@@ -96,11 +100,12 @@
             font-weight: bold;
             margin-right: 100px;
         }
-        #img3{
+        /* #img3{
             height: 600px;
             width: 100%;
+            /* border: 2px solid mediumspringgreen; 
             
-        }
+        } */
        td{
         float: left;
        }
@@ -132,15 +137,15 @@
         padding-bottom: 10px;
         padding-left: 230px;
         padding-right: 10px;
+        border: 3px solid olive;
         }
         #hello11{
             padding-top: 50px;
             padding-bottom: 10px;
             padding-left: 20px;
-            padding-right: 202px;
+            padding-right: 180px;
             }
 
-       
         #hello2{
             text-align: center;
             padding-top: 50px;
@@ -182,10 +187,10 @@
 
         
         
-        .custom-btn {
-            background-color: transparent; /* No background color */
-            color: rgb(0, 0, 0); /* Set initial font color */
-            border: none; /* No border */
+        /* .custom-btn {
+            background-color: transparent; 
+            color: rgb(0, 0, 0); 
+            border: none; 
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -195,141 +200,44 @@
         
         .custom-btn:focus,
         .custom-btn:active {
-            color: #007bff; /* Change font color to blue when clicked */
-            outline: transparent; /* Remove the outline */
-            text-decoration: underline; /* Underline the text when clicked */
+            color: #007bff; 
+            outline: transparent; 
+            text-decoration: underline; 
             box-shadow: none;
             text-underline-offset: 10px;
         }
         
+         */
+
+
+         .custom-btn {
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            outline: none;
+        }
+        
+        .custom-btn.active-btn,
+        .custom-btn:focus,
+        .custom-btn:active {
+            color: #007bff;
+            outline: transparent;
+            text-decoration: underline;
+            box-shadow: none;
+            text-underline-offset: 10px;
+        }
+        
+        .active-icon {
+            color: #007bff; /* Active icon color */
+        }
         
 
 
 
-
-/* .custom-range {
-  appearance: none;
-  width: 80%;
-  height: 8px;
-  background: linear-gradient(to right, #007bff 50%, #ddd 50%);
-  border-radius: 5px;
-  outline: none;
-  transition: background 0.15s ease-in-out;
-}
-
-.custom-range::-webkit-slider-thumb {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: #007bff;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid white;
-}
-
-.custom-range::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: #007bff;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid white;
-}
-
-.custom-range::-ms-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: #007bff;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid white;
-}
-
-.custom-range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  background: transparent;
-}
-
-.custom-range::-moz-range-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  background: transparent;
-}
-
-.custom-range::-ms-track {
-  width: 100%;
-  height: 8px;
-  cursor: pointer;
-  background: transparent;
-} */
-
-
-
-.custom-range {
-    appearance: none;
-    width: 80%;
-    height: 8px;
-    background: linear-gradient(to right, #007bff 70%, #ddd 70%);
-    border-radius: 5px;
-    outline: none;
-    transition: background 0.15s ease-in-out;
-  }
-  
-  .custom-range::-webkit-slider-thumb {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: transparent; /* Make the thumb transparent */
-    border-radius: 50%;
-    cursor: pointer;
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove box-shadow if any */
-  }
-  
-  .custom-range::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: transparent; /* Make the thumb transparent */
-    border-radius: 50%;
-    cursor: pointer;
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove box-shadow if any */
-  }
-  
-  .custom-range::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: transparent; /* Make the thumb transparent */
-    border-radius: 50%;
-    cursor: pointer;
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove box-shadow if any */
-  }
-  
-  .custom-range::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: transparent;
-  }
-  
-  .custom-range::-moz-range-track {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: transparent;
-  }
-  
-  .custom-range::-ms-track {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: transparent;
-  }
-  
 
 
 .card.selected {
@@ -417,7 +325,15 @@ header .col-2 {
         #hello13{
             padding: 30px;
         }
-        
+        #img2{
+            height: 600px;
+            width: 100%;
+            /* position: relative; */
+            opacity: 1; 
+
+            /* border: 2px solid mediumaquamarine; */
+            
+        }
         
 }
 
@@ -486,6 +402,7 @@ header {
 
     #hello3{
         padding: 20px;
+        
     }
     #hello2{
         padding: 20px;
@@ -518,7 +435,7 @@ header {
         border: none; /* This removes the border */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 200px;
-        margin-left: -340px; 
+        margin-left: -500px; 
         position: absolute;
         
     }
@@ -529,16 +446,16 @@ header {
         border: none; /* This removes the border */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 100px;
-        margin-left: -270px;
+        margin-left: -420px;
         position: absolute;
     }
     .col-6 #python{
         width: auto;
-        height: 20px;
+        height: 30px;
         border: none; /* This removes the border */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 150px;
-        margin-left: -120px; 
+        margin-left: -30px; 
         position: absolute;
     }
     .col-6 #css{
@@ -547,7 +464,7 @@ header {
         border: none; /* This removes the border */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 70px;
-        margin-left: -30px; 
+        margin-left: 50px; 
         position: absolute;
     }
     
@@ -557,11 +474,25 @@ header {
         border: none; /* This removes the border */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 260px;
-        margin-left: -80px;
+        margin-left: 20px;
         position: absolute;
     }
+    .box {
+        display: none;
+    }
     
+    .circle {
+        display: none;
+    }
 
+    .col-6 #background {
+        background: linear-gradient(to left, #ebf4fd 50%, transparent 50%);
+        padding: 20px;
+        position: relative;
+        
+    }
+   
+    
 
 
    
@@ -572,6 +503,60 @@ header {
         #img10{
             height: 1000px;
         }
+        #img2{
+            height: 600px;
+            width: 180px;
+            position: relative;
+            opacity: 1;             
+        }
+        .col-6 #vs{
+            width: auto;
+            height: 30px;
+            border: none; /* This removes the border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: -420px;
+            margin-left: -60px;
+            position: absolute;
+            
+        }
+        
+        .col-6 #js{
+            width: auto;
+            height: 40px;
+            border: none; /* This removes the border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: -520px;
+            margin-left: -10px;
+            position: absolute;
+        }
+        .col-6 #python{
+            width: auto;
+            height: 30px;
+            border: none; /* This removes the border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: -490px;
+            margin-left: 150px;
+            position: absolute;
+        }
+        .col-6 #css{
+            width: auto;
+            height: 35px;
+            border: none; /* This removes the border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: -550px;
+            margin-left: 215px;
+            position: absolute;
+        }
+        
+        .col-6 #react{
+            width: auto;
+            height: 35px;
+            border: none; /* This removes the border */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: -400px;
+            margin-left:180px;
+            position: absolute;
+        }
 
         
         
@@ -581,51 +566,59 @@ header {
 
 #vs{
     width: auto;
-    height: 40px;
+    height: 35px;
     border: none; /* This removes the border */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 200px;
-    margin-left: -650px;
+    margin-top: 170px;
+    margin-left: -500px;
     position: absolute;
-    
+    transform: scale(1.2, 1);
+    transform-origin: center;
 }
 
 #js{
     width: auto;
-    height: 40px;
+    height: 35px;
     border: none; /* This removes the border */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 100px;
-    margin-left: -530px;
+    margin-top: 80px;
+    margin-left: -430px;
     position: absolute;
 }
 #python{
     width: auto;
-    height: 20px;
+    height: 30px;
     border: none; /* This removes the border */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 150px;
-    margin-left: -280px; 
+    margin-top: 100px;
+    margin-left: -100px; 
     position: absolute;
+    transform: scale(1.2, 1);
+    transform-origin: center;
+    
 }
 #css{
     width: auto;
-    height: 35px;
+    height: 40px;
     border: none; /* This removes the border */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 70px;
-    margin-left: -160px; 
+    margin-top: 50px;
+    margin-left: 20px; 
     position: absolute;
+    transform: scale(1.2, 1);
+    transform-origin: center;
 }
 
 #react{
     width: auto;
-    height: 35px;
+    height: 43px;
     border: none; /* This removes the border */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 260px;
-    margin-left: -200px;
+    margin-top: 210px;
+    margin-left: -20px;
     position: absolute;
+    transform: scale(1.2, 1);
+    transform-origin: center;
 }
 
 
@@ -641,9 +634,172 @@ header {
     font-size: 40px;
 }
 
-#background {
+/* #background {
     background: linear-gradient(to left, #e5f1fd 50%, transparent 50%);
+} */
+
+#background {
+    background: linear-gradient(to left, #ebf4fd 50%, transparent 50%);
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 202px;
+    position: relative;
+    
 }
+
+/* #background1 {
+    background: linear-gradient(to right, #ebf4fd 50%, transparent 50%);
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 230px;
+    padding-right: 10px;
+} */
+
+/* #background1 {
+    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
+    position: relative;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    /* overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 230px;
+    padding-right: 10px;
+} */
+
+
+/* #background1 {
+    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
+    position: relative;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    padding: 50px 10px 10px 230px; /* Order: top, right, bottom, left 
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; 
+}
+
+#img3 {
+    height: 100%;
+    width: auto;
+    max-height: 600px;
+    max-width: 100%;
+    position: absolute;
+}
+
+ */
+
+ /* #background1 {
+    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
+    position: relative;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    padding: 50px 10px 10px 230px; /* Order: top, right, bottom, left 
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; 
+}
+
+#img3 {
+    height: 100%;
+    width: auto;
+    max-height: 600px;
+    max-width: 100%;
+    position: absolute;
+} */
+
+
+
+/* #img3 {
+    height: auto;
+    width: 100%;
+    max-height: 600px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    border: 2px solid navy;
+}
+
+
+  
+  .box {
+    width: auto;
+    height:400px; /* Make the box height more than the circle 
+    border: 1px solid #000;
+    opacity: 1; /* Make the box transparent 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #ebf4fd  ;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-30%, -80%);
+    
+  }
+
+  #hello111{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 230px;
+    padding-right: 10px;
+    border: 3px solid olive;
+    }
+  */
+
+
+
+  #img3 {
+    height: 900px;
+    width: 100%;
+    /* max-height: 600px;
+    max-width: 100%; */
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: -500px;
+}
+
+.box {
+    width: auto;
+    height: 400px; /* Make the box height more than the circle */
+    border: 1px solid #000;
+    opacity: 1; /* Make the box transparent */
+    position: relative;
+    overflow: hidden; /* Prevents the circle from overflowing */
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #ebf4fd;
+    position: absolute;
+    top: 50%; /* Adjust this value to control vertical positioning */
+    left: 50%; /* Adjust this value to control horizontal positioning */
+    transform: translate(-30%, -20%); /* Center the circle relative to its parent container */
+}
+
+#hello111 {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 230px;
+    padding-right: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative; /* Ensure it can contain the absolutely positioned circle */
+    overflow: hidden; /* Prevents overflow of the circle */
+}
+
+
 
 
 
