@@ -16,8 +16,8 @@
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 1000; /* Ensures the header is on top of other content */
-            background-color: white; /* Adjust background color if needed */
+            z-index: 1000;
+            background-color: white; 
             font-size: 20px;
         }
         #img{
@@ -27,7 +27,7 @@
             float:center;
         }
         #home{
-            /* margin-top: 300px; */
+           
             padding-top: 60px;
         }
         #about{
@@ -72,7 +72,7 @@
             color: #007bff;;
         }
         #hello{
-            /* text-align: center; */
+           
             padding-top: 170px;
             padding-bottom: 120px;
             padding-left: 250px;
@@ -80,11 +80,8 @@
         }
         #img2{
             height: 600px;
-            width: 100%;
-            /* position: relative; */
+            width: 100%; 
             opacity: 1; 
-
-            /* border: 2px solid mediumaquamarine; */
             
         }
         h6{
@@ -100,12 +97,7 @@
             font-weight: bold;
             margin-right: 100px;
         }
-        /* #img3{
-            height: 600px;
-            width: 100%;
-            /* border: 2px solid mediumspringgreen; 
-            
-        } */
+        
        td{
         float: left;
        }
@@ -117,19 +109,20 @@
        }
        #img6{
         height: 250px;
+        opacity: 0.5;
        }
        #img7{
         height: 250px;
        }
        #img8{
-        height: 40px;
+        height: 50px;
        }
        #img9{
         height: 90px;
         border-radius: 90%;
        }
        #img10{
-        height: 400px;
+        height: 350px;
         width: 100%;
        }
        #hello1{
@@ -143,13 +136,13 @@
             padding-top: 50px;
             padding-bottom: 10px;
             padding-left: 20px;
-            padding-right: 180px;
+            padding-right: 200px;
             }
 
         #hello2{
             text-align: center;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             padding-left: 250px;
             padding-right: 250px;
         }
@@ -165,7 +158,7 @@
             padding-bottom: 50px;
         }
         #height{
-            height: 220px;
+            height: 240px;
             
         }
         .footerBottom{
@@ -184,30 +177,6 @@
             text-align: center;
             padding: 40px;
         }
-
-        
-        
-        /* .custom-btn {
-            background-color: transparent; 
-            color: rgb(0, 0, 0); 
-            border: none; 
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: color 0.3s ease;
-            outline: none;
-        }
-        
-        .custom-btn:focus,
-        .custom-btn:active {
-            color: #007bff; 
-            outline: transparent; 
-            text-decoration: underline; 
-            box-shadow: none;
-            text-underline-offset: 10px;
-        }
-        
-         */
 
 
          .custom-btn {
@@ -232,7 +201,7 @@
         }
         
         .active-icon {
-            color: #007bff; /* Active icon color */
+            color: #007bff;
         }
         
 
@@ -255,30 +224,30 @@
 
 
 header .container-fluid {
-    padding: 0; /* Remove padding */
+    padding: 0; 
 }
 
 header .row {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Distribute space between elements */
-    align-items: center; /* Center elements vertically */
-    width: 100%; /* Ensure row takes full width of the screen */
-    margin: 0; /* Remove margin */
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin: 0;
 }
 
 header .col-9, header .col-3 {
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    padding: 0;
+    margin: 0;
 }
 
 header .col-4, header .col-8, header .col-2 {
-    padding: 0; /* Remove padding */
+    padding: 0; 
 }
 
 header .col-2 {
     flex: 1; 
-    text-align: center; /* Center text */
+    text-align: center; 
 }
 
 @media (max-width: 768px) {
@@ -292,11 +261,10 @@ header .col-2 {
     border: 0px;
     }
    
-    
-    
+
 
     #col, .col-3 {
-        display: none; /* Hide Portfolio and aachalchawhan14 */
+        display: none;
     }
 
     header .col-2 a {
@@ -305,19 +273,22 @@ header .col-2 {
     
     
     #hello{
-            /* text-align: center; */
+           
             padding: 30px;
             text-align: justify;
         }
         .col-6 #style{
-            font-size: 33px;
+            font-size: 34px;
         }
         .col-6 #style1{
             font-size: 35px;
             
         }
+        #img8{
+            height: 35px;
+        }
         #hello11{
-            /* text-align: center; */
+            
             padding: 30px;
             text-align: justify;
            
@@ -328,10 +299,7 @@ header .col-2 {
         #img2{
             height: 600px;
             width: 100%;
-            /* position: relative; */
             opacity: 1; 
-
-            /* border: 2px solid mediumaquamarine; */
             
         }
         
@@ -339,18 +307,18 @@ header .col-2 {
 
 #style{
     font-size: 49px;
+    font-weight: 400;
 }
 #style1{
-    font-size: 56px;
-    
+    font-size: 56px; 
 }
 
 a {
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
 }
 
 header {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -370,29 +338,26 @@ header {
         max-width: 100%;
     }
     #about .col-6 img {
-        display: none; /* Hide the image */
+        display: none; 
     }
    
     
 }
 
 
-
-
-
 @media (max-width: 768px) {
     .col-9 {
-        flex: 0 0 100%; /* Convert col-9 to full width on small screens */
-        max-width: 100%; /* Ensure it takes full width */
+        flex: 0 0 100%; 
+        max-width: 100%; 
     }
 
     .col-3 {
-        display: none; /* Hide col-3 on small screens */
+        display: none; 
     }
     
     .row > .col-2 {
-        font-size: 12px; /* Smaller font size for menu items */
-        padding-left: 10px; /* Adjust spacing */
+        font-size: 12px; 
+        padding-left: 10px; 
     }
 
     header .row {
@@ -432,7 +397,7 @@ header {
     .col-6 #vs{
         width: auto;
         height: 40px;
-        border: none; /* This removes the border */
+        border: none;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 200px;
         margin-left: -500px; 
@@ -443,7 +408,7 @@ header {
     .col-6 #js{
         width: auto;
         height: 40px;
-        border: none; /* This removes the border */
+        border: none; 
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 100px;
         margin-left: -420px;
@@ -452,7 +417,7 @@ header {
     .col-6 #python{
         width: auto;
         height: 30px;
-        border: none; /* This removes the border */
+        border: none; 
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 150px;
         margin-left: -30px; 
@@ -461,7 +426,7 @@ header {
     .col-6 #css{
         width: auto;
         height: 35px;
-        border: none; /* This removes the border */
+        border: none;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 70px;
         margin-left: 50px; 
@@ -471,7 +436,7 @@ header {
     .col-6 #react{
         width: auto;
         height: 35px;
-        border: none; /* This removes the border */
+        border: none; 
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
         margin-top: 260px;
         margin-left: 20px;
@@ -491,9 +456,6 @@ header {
         position: relative;
         
     }
-   
-    
-
 
    
 }
@@ -501,7 +463,7 @@ header {
     {
 
         #img10{
-            height: 1000px;
+            height: 800px;
         }
         #img2{
             height: 600px;
@@ -512,7 +474,7 @@ header {
         .col-6 #vs{
             width: auto;
             height: 30px;
-            border: none; /* This removes the border */
+            border: none; 
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             margin-top: -420px;
             margin-left: -60px;
@@ -523,7 +485,7 @@ header {
         .col-6 #js{
             width: auto;
             height: 40px;
-            border: none; /* This removes the border */
+            border: none; 
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             margin-top: -520px;
             margin-left: -10px;
@@ -532,7 +494,7 @@ header {
         .col-6 #python{
             width: auto;
             height: 30px;
-            border: none; /* This removes the border */
+            border: none; 
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             margin-top: -490px;
             margin-left: 150px;
@@ -541,7 +503,7 @@ header {
         .col-6 #css{
             width: auto;
             height: 35px;
-            border: none; /* This removes the border */
+            border: none;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             margin-top: -550px;
             margin-left: 215px;
@@ -551,7 +513,7 @@ header {
         .col-6 #react{
             width: auto;
             height: 35px;
-            border: none; /* This removes the border */
+            border: none; 
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             margin-top: -400px;
             margin-left:180px;
@@ -567,7 +529,7 @@ header {
 #vs{
     width: auto;
     height: 35px;
-    border: none; /* This removes the border */
+    border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     margin-top: 170px;
     margin-left: -500px;
@@ -579,7 +541,7 @@ header {
 #js{
     width: auto;
     height: 35px;
-    border: none; /* This removes the border */
+    border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     margin-top: 80px;
     margin-left: -430px;
@@ -588,7 +550,7 @@ header {
 #python{
     width: auto;
     height: 30px;
-    border: none; /* This removes the border */
+    border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     margin-top: 100px;
     margin-left: -100px; 
@@ -600,7 +562,7 @@ header {
 #css{
     width: auto;
     height: 40px;
-    border: none; /* This removes the border */
+    border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     margin-top: 50px;
     margin-left: 20px; 
@@ -612,7 +574,7 @@ header {
 #react{
     width: auto;
     height: 43px;
-    border: none; /* This removes the border */
+    border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     margin-top: 210px;
     margin-left: -20px;
@@ -634,9 +596,6 @@ header {
     font-size: 40px;
 }
 
-/* #background {
-    background: linear-gradient(to left, #e5f1fd 50%, transparent 50%);
-} */
 
 #background {
     background: linear-gradient(to left, #ebf4fd 50%, transparent 50%);
@@ -648,121 +607,15 @@ header {
     
 }
 
-/* #background1 {
-    background: linear-gradient(to right, #ebf4fd 50%, transparent 50%);
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 230px;
-    padding-right: 10px;
-} */
-
-/* #background1 {
-    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
-    position: relative;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
-    /* overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 230px;
-    padding-right: 10px;
-} */
-
-
-/* #background1 {
-    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
-    position: relative;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    padding: 50px 10px 10px 230px; /* Order: top, right, bottom, left 
-    overflow: hidden;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; 
-}
-
-#img3 {
-    height: 100%;
-    width: auto;
-    max-height: 600px;
-    max-width: 100%;
-    position: absolute;
-}
-
- */
-
- /* #background1 {
-    background: linear-gradient(to bottom, #ebf4fd 60%, transparent 60%);
-    position: relative;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
-    padding: 50px 10px 10px 230px; /* Order: top, right, bottom, left 
-    overflow: hidden;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; 
-}
-
-#img3 {
-    height: 100%;
-    width: auto;
-    max-height: 600px;
-    max-width: 100%;
-    position: absolute;
-} */
 
 
 
-/* #img3 {
-    height: auto;
-    width: 100%;
-    max-height: 600px;
-    max-width: 100%;
-    position: relative;
-    z-index: 1;
-    border: 2px solid navy;
-}
-
-
-  
-  .box {
-    width: auto;
-    height:400px; /* Make the box height more than the circle 
-    border: 1px solid #000;
-    opacity: 1; /* Make the box transparent 
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .circle {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #ebf4fd  ;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-30%, -80%);
-    
-  }
-
-  #hello111{
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 230px;
-    padding-right: 10px;
-    border: 3px solid olive;
-    }
-  */
 
 
 
   #img3 {
     height: 900px;
     width: 100%;
-    /* max-height: 600px;
-    max-width: 100%; */
     position: relative;
     z-index: 1;
     border: 2px solid rgb(255, 255, 255);
@@ -798,13 +651,6 @@ header {
     position: relative; /* Ensure it can contain the absolutely positioned circle */
     overflow: hidden; /* Prevents overflow of the circle */
 }
-
-
-
-
-
-
-
 
 
 ul {
@@ -847,3 +693,8 @@ ul li:last-child::after {
 }
 
 
+body p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+  }
+  
