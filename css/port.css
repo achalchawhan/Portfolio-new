@@ -78,12 +78,7 @@
             padding-left: 250px;
             padding-right: 10px;
         }
-        #img2{
-            height: 600px;
-            width: 100%; 
-            opacity: 1; 
-            
-        }
+       
         h6{
             color:  #007bff;
             font-weight: bolder;
@@ -296,12 +291,7 @@ header .col-2 {
         #hello13{
             padding: 30px;
         }
-        #img2{
-            height: 600px;
-            width: 100%;
-            opacity: 1; 
-            
-        }
+        
         
 }
 
@@ -394,54 +384,7 @@ header {
         font-weight: 1000;
        
     }
-    .col-6 #vs{
-        width: auto;
-        height: 40px;
-        border: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 200px;
-        margin-left: -500px; 
-        position: absolute;
-        
-    }
     
-    .col-6 #js{
-        width: auto;
-        height: 40px;
-        border: none; 
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 100px;
-        margin-left: -420px;
-        position: absolute;
-    }
-    .col-6 #python{
-        width: auto;
-        height: 30px;
-        border: none; 
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 150px;
-        margin-left: -30px; 
-        position: absolute;
-    }
-    .col-6 #css{
-        width: auto;
-        height: 35px;
-        border: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 70px;
-        margin-left: 50px; 
-        position: absolute;
-    }
-    
-    .col-6 #react{
-        width: auto;
-        height: 35px;
-        border: none; 
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 260px;
-        margin-left: 20px;
-        position: absolute;
-    }
     .box {
         display: none;
     }
@@ -465,60 +408,13 @@ header {
         #img10{
             height: 800px;
         }
-        #img2{
+        .col-6 #img2{
             height: 600px;
-            width: 180px;
+            width: 140px;
             position: relative;
             opacity: 1;             
         }
-        .col-6 #vs{
-            width: auto;
-            height: 30px;
-            border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -420px;
-            margin-left: -60px;
-            position: absolute;
-            
-        }
-        
-        .col-6 #js{
-            width: auto;
-            height: 40px;
-            border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -520px;
-            margin-left: -10px;
-            position: absolute;
-        }
-        .col-6 #python{
-            width: auto;
-            height: 30px;
-            border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -490px;
-            margin-left: 150px;
-            position: absolute;
-        }
-        .col-6 #css{
-            width: auto;
-            height: 35px;
-            border: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -550px;
-            margin-left: 215px;
-            position: absolute;
-        }
-        
-        .col-6 #react{
-            width: auto;
-            height: 35px;
-            border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-            margin-top: -400px;
-            margin-left:180px;
-            position: absolute;
-        }
+       
 
         
         
@@ -526,63 +422,80 @@ header {
     
 
 
-#vs{
+
+
+#vs {
     width: auto;
     height: 35px;
     border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 170px;
-    margin-left: -500px;
     position: absolute;
+    top: 170px;
+    left: 10%; /* Aligns to the left edge of the container */
     transform: scale(1.2, 1);
     transform-origin: center;
 }
 
-#js{
+#js {
     width: auto;
     height: 35px;
     border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 80px;
-    margin-left: -430px;
     position: absolute;
+    top: 80px;
+    left: 22%; /* Adjust as needed */
 }
-#python{
-    width: auto;
-    height: 30px;
+
+#python {
+    width:auto;
+    height: 20px;
     border: none; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 100px;
-    margin-left: -100px; 
     position: absolute;
-    transform: scale(1.2, 1);
-    transform-origin: center;
-    
-}
-#css{
-    width: auto;
-    height: 40px;
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 50px;
-    margin-left: 20px; 
-    position: absolute;
+    top: 100px;
+    left: 61%; /* Center horizontally */
     transform: scale(1.2, 1);
     transform-origin: center;
 }
 
-#react{
+#css {
     width: auto;
-    height: 43px;
+    height: 28px;
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-top: 210px;
-    margin-left: -20px;
     position: absolute;
+    top: 50px;
+    left: 80%; /* Adjust as needed */
     transform: scale(1.2, 1);
     transform-origin: center;
 }
 
+#react {
+    width: auto;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    top: 210px;
+    left:74%; /* Aligns to the right edge of the container */
+    transform: scale(1.2, 1);
+    transform-origin: center;
+}
+
+#background {
+    background: linear-gradient(to left, #ebf4fd 50%, transparent 50%);
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 202px;
+    position: relative;
+}
+
+#img2 {
+    height: 600px;
+    width: 108%; 
+    opacity: 1; 
+}
 
 
 #w{
@@ -607,40 +520,56 @@ header {
     
 }
 
-
-
-
-
-
-
   #img3 {
     height: 900px;
     width: 100%;
     position: relative;
     z-index: 1;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid transparent;
     margin-bottom: -500px;
 }
 
 .box {
     width: auto;
     height: 400px; /* Make the box height more than the circle */
-    border: 1px solid #000;
+    border: 1px solid  #ebf4fd;
     opacity: 1; /* Make the box transparent */
     position: relative;
     overflow: hidden; /* Prevents the circle from overflowing */
 }
 
+
+
 .circle {
-    width: 500px;
-    height: 500px;
+    width: 40vw; 
+    height: 50vw; 
+    max-width: 500px; 
+    max-height: 500px; 
     border-radius: 50%;
     background-color: #ebf4fd;
     position: absolute;
-    top: 50%; /* Adjust this value to control vertical positioning */
-    left: 50%; /* Adjust this value to control horizontal positioning */
-    transform: translate(-30%, -20%); /* Center the circle relative to its parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -10%);
 }
+
+@media (max-width: 1368px) {
+    .circle {
+        width: 30vw;
+        height: 50vw;
+        transform: translate(-20%, -10%); /* Adjust centering */
+    }
+}
+@media (max-width: 1000px) {
+    .circle {
+       display: none;
+    }
+}
+
+
+
+
+
 
 #hello111 {
     padding-top: 50px;
