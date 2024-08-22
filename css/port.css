@@ -32,16 +32,22 @@
         }
         #about{
             padding-top: 60px;
+          
         }
         #skills{
             padding-top: 60px;
+            
         }
         #services{
             padding-top: 60px;
+            
+        }
+        #Education{
+            padding-top: 60px;
         }
         #project{
-            padding-top:60px;
-        }
+            padding-top:60px; 
+        } 
         a{
             text-decoration: none;
             color: black;
@@ -289,7 +295,7 @@ header .col-2 {
             height: 35px;
         }
         #hello11{
-            margin-top: -110px; 
+            margin-top: -60px; 
             padding: 20px;
             text-align: justify;   
         }
@@ -367,7 +373,7 @@ header {
 
     #hello3{
         padding: 20px;
-      
+       
     }
     /* #skills{
         padding: 20px;
