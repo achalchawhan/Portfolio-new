@@ -133,6 +133,12 @@
             padding-left: 20px;
             padding-right: 200px;
             }
+            #hello112{
+                padding-top: 50px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 200px;
+                }
 
         #hello2{
             text-align: center;
@@ -284,14 +290,18 @@ header .col-2 {
         }
         #hello11{
             margin-top: -110px; 
-            padding: 30px;
+            padding: 20px;
             text-align: justify;   
         }
-        
+
         #hello13{
             padding: 30px;
         }
-        
+        #hello112{
+           
+            padding: 20px;
+            text-align: justify;   
+        }
         
 }
 
@@ -357,8 +367,11 @@ header {
 
     #hello3{
         padding: 20px;
-        
+      
     }
+    /* #skills{
+        padding: 20px;
+    } */
     #hello2{
         padding: 20px;
     }
@@ -402,21 +415,21 @@ header {
 
    
 }
-@media (max-width: 400px) 
+@media (max-width: 640px) 
+    {
+
+        #img10{
+            height: 600px;
+        }
+        
+    }
+    
+@media (max-width: 490px) 
     {
 
         #img10{
             height: 800px;
         }
-        /* .col-6 #img2{
-            height: 600px;
-            width: 140px;
-            position: relative;
-            opacity: 1;             
-        } */
-       
-
-        
         
     }
     
