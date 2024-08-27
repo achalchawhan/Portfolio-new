@@ -518,7 +518,7 @@ header {
 
 #img2 {
     height: 600px; 
-    width: 50%;
+    width: auto;
     opacity: 1;
     position: absolute;
     top: 50%;
@@ -531,26 +531,59 @@ header {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     
     #vs{
         height: 25px;
+        left: 3%;
     }
     #js{
         height: 25px;
+        left: 20%;
     }
     #python{
         height: 15px;
+        left: 75%;
     }
     #css{
         height: 25px;
+        left: 90%;
     }
     #react{
         height: 25px;
+        left: 86%;
+    }
+    #img2{
+        width: auto;
     }
 }
 
-
+@media screen and (max-width: 345px) {
+    
+    #vs{
+       height: 25px;
+       left: -1%;
+    }
+    #js{
+        height: 25px;
+        left: 17%;
+    }
+    #python{
+        height: 15px;
+        left: 78%;
+    }
+    #css{
+        height: 25px;
+        left: 91%;
+    }
+    #react{
+        height: 25px;
+        left: 90%;
+    }
+    /* #img2{
+        width: auto;
+    } */
+}
 
 
 
