@@ -105,6 +105,7 @@
             }
             div #hello11{
                 padding-right: 50px;
+        
             }
             div #hello111{
                 padding-left: 50px;
@@ -184,7 +185,20 @@
            padding-top: 20px;
          
        }
-       
+       @media (max-width: 768px){
+        #hello111{
+            display: none;
+        }
+        #center{
+            text-align: center;
+        }
+        /* #style{
+            text-align: center;
+        }
+        #style1{
+            text-align: center;
+        } */
+       }
         }
         @media (max-width: 600px){
             #col1{
@@ -211,11 +225,7 @@
             div .modal-dialog {   
                 width: 200px;
             }
-            div #hello111{
-                
-                height: 650px;
-                
-            }
+            
             #img10{
                 height: auto;
             }
@@ -227,6 +237,12 @@
             @media (max-width: 415px){
                 div #img10{
                 height: 750px;
+            }
+            #style{
+                text-align: center;
+            }
+            #style1{
+                text-align: center;
             }
             }
         @media (max-width: 385px){
@@ -277,21 +293,20 @@
         }
         #vs {
             width: auto;
-            height: 35px;
+            height: 45px;
             border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             position: absolute;
             top: 290px;
-            left: 15%; 
-            transform: scale(1.2, 1);
+            left: 12%; 
             transform-origin: center;
+            overflow: hidden;
         }
+        
 
         #js {
              width: auto;
-            height: 35px;
+            height: 45px;
             border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             position: absolute;
             top: 120px;
             left: 25%; 
@@ -299,9 +314,8 @@
 
         #python {
             width:auto;
-            height: 20px;
+            height: 35px;
             border: none; 
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             position: absolute;
             top: 170px;
             left: 70%; 
@@ -311,9 +325,8 @@
 
         #css {
             width: auto;
-            height: 28px;
+            height: 45px;
             border: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
             position: absolute;
             top: 110px;
             left: 85%; 
@@ -323,14 +336,15 @@
 
         #react {
             width: auto;
-            height: 30px;
+            height: 45px;
             border: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+            
             position: absolute;
             top: 270px;
             left:80%; 
-            transform: scale(1.2, 1);
+            transform: scale(0.9);
             transform-origin: center;
+            overflow: hidden;
         }
 
 
@@ -436,6 +450,9 @@
         #react{
             left: 430px;
         }
+        div #b{
+            margin-right: 0px;
+        }
 
     }
     @media (max-width: 997px){
@@ -479,10 +496,10 @@
     }
     @media (max-width: 770px){
         #vs{
-            left: 30px;
+            left: 90px;
         }
         #js{
-            left: 100px;
+            left: 180px;
         }
         #python{
             left: 480px;
@@ -500,6 +517,12 @@
 
     }
     @media (max-width: 630px){
+        #vs{
+            left: 50px;
+        }
+        #js{
+            left: 100px;
+        }
         #python{
             left: 400px;
         }
@@ -513,6 +536,13 @@
 
     }
     @media (max-width: 538px){
+        #vs{
+            left: 50px;
+        }
+        #js{
+            left: 100px;
+        }
+
         #python{
             left: 350px;
         }
@@ -528,46 +558,46 @@
     @media (max-width: 475px){
         #vs{
             left: 30px;
-            height: 20px;
+            height: 40px;
         }
         #js{
             left: 100px;
-            height: 20px;
+            height: 40px;
         }
         #python{
             left: 330px;
-            height: 15px;
+            height: 35px;
         }
         #css{
             left: 380px;
-            height: 20px;
+            height: 40px;
         }
         #react{
             left: 390px;
-            height: 20px;
+            height: 40px;
         }
 
     }
     @media (max-width: 428px){
         #vs{
             left: 10px;
-            height: 20px;
+            height: 40px;
         }
         #js{
             left: 50px;
-            height: 20px;
+            height: 40px;
         }
         #python{
             left: 300px;
-            height: 15px;
+            height: 35px;
         }
         #css{
             left: 350px;
-            height: 20px;
+            height: 40px;
         }
         #react{
             left: 330px;
-            height: 20px;
+            height: 40px;
         }
 
     }
@@ -575,15 +605,15 @@
         
         #python{
             left: 280px;
-            height: 15px;
+            height: 35px;
         }
         #css{
             left: 330px;
-            height: 20px;
+            height: 40px;
         }
         #react{
             left: 320px;
-            height: 20px;
+            height: 40px;
         }
 
     }
@@ -686,39 +716,15 @@
     }
 }
 
-/* Optional: For responsiveness */
-@media (max-width: 768px) {
-    .circle {
-        width: 70vw; 
-        height: 70vw;
-        transform: translate(-50%, -25%);
-    }
-}
-@media (max-width: 541px) {
-    .circle {
-        width: 90vw; 
-        height: 100vw;
-        transform: translate(-50%, -10%);
-    }
-}
+
 @media (max-width: 413px) {
-    .circle {
-        width: 90vw; 
-        height: 100vw;
-        transform: translate(-50%, -10%);
-    }
+ 
     div #img6{
         height: 400px;
         opacity: 0.5;
        }
 }
-@media (max-width: 361px) {
-    .circle {
-        width: 90vw; 
-        height: 100vw;
-        transform: translate(-50%, -0%);
-    }
-}
+
 @media (max-width: 300px){
     div #img6{
         height: 500px;
@@ -861,6 +867,18 @@ body p {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
   }
+  header {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+  }
+  h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+  }
+  h6{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+  }
   ul {
     list-style-type: none; /* Remove default bullets */
     padding: 0;
@@ -901,4 +919,59 @@ ul li:last-child::after {
 }
 
 
-    
+ #i{
+    color:#007bff;
+     font-size: 18px;  
+     background-color: #ebf4fd; 
+     padding: 10px; 
+     border: 2px transparent;
+     border-radius: 100%;
+ } 
+
+
+
+.icon {
+    color: #007bff;
+    font-size: 18px;  
+    background-color: #ebf4fd; 
+    padding: 10px; 
+    border: 2px transparent;
+    border-radius: 100%;
+} 
+
+.card:hover .icon {
+    color: white;
+    background-color: #007bff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.active-icon {
+    color: white;
+    background-color: #007bff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* .no-hover:hover {
+    pointer-events: none;
+} */
+
+/* Custom CSS to remove hover effects */
+.no-hover:hover {
+    /* Ensures no hover effect on the card */
+    box-shadow: none;
+    background-color: white; /* Ensure background stays white */
+}
+
+.no-hover .btn {
+    cursor: default; /* Ensures cursor does not change on hover */
+}
+#b{
+    margin-right: 250px;
+   
+}
+.modal-header{
+    padding: 8px;
+}
