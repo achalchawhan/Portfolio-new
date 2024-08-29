@@ -439,15 +439,18 @@
 
     }
     @media (max-width: 997px){
-        #python{
+        /* #python{
             left: 320px;
-        }
+        } */
         #css{
             left: 400px;
         
         }
         #react{
             left: 390px;
+        }
+        #img3{
+            margin-top: 50px;
         }
 
     }
@@ -468,6 +471,10 @@
         #react{
             left: 330px;
         }
+        #img3{
+            margin-top: 100px;
+        }
+
 
     }
     @media (max-width: 770px){
@@ -486,6 +493,9 @@
         }
         #react{
             left: 520px;
+        }
+        #img3{
+            margin-top: 0px;
         }
 
     }
