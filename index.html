@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/port.css">
+    
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -75,7 +77,7 @@
                     
                     <button type="button" class="btn btn-primary">Book Call &nbsp; <i style="color:white; font-size: 15px;" class="fa-solid fa-chevron-right"></i></button>&nbsp;&nbsp;&nbsp;
                     
-                    
+                    <!-- <a href="resume.pdf" class="btn btn-primary" target="_blank"> Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i> &nbsp;&nbsp;&nbsp;</a> -->
                     <button class="btn btn-primary" onclick="window.open('resume.pdf', '_blank')">
                         Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i>&nbsp;&nbsp;&nbsp;
                     </button>
@@ -128,12 +130,12 @@
                                             <p><b>Name:</b> Achal Pushpanand Chawhan </p>
                                         </td>
                                         <td>
-                                            <p><b>Location:</b> Bhandara, Maharashtra</p>
+                                            <p><b>Location:</b>         Bhandara, Maharashtra</p>
                                         </td>    
                                     </tr>
                                     <tr>
-                                        <td ><p><b>Email:</b> aachalchawhan14@gmail.com</p></td>
-                                        <td ><p><b>Office:</b> Nagpur , Maharashtra</p></td>
+                                        <td style="text-align: left;"><p><b>Email:</b> aachalchawhan14@gmail.com</p></td>
+                                        <td style="text-align: left;"><p><b>Office:</b> Nagpur, Maharashtra</p></td>
                                     </tr>
                                     
                                 </tbody>
@@ -146,7 +148,9 @@
                                 <tbody>
                                     <tr>
                                         <td scope="row">
-                                            
+                                            <!-- <a href="resume.pdf" class="btn btn-primary" target="_blank">
+                                                Download CV  &nbsp;&nbsp;<i style="color:white; font-size: 15px;" class="fa-solid fa-chevron-right"></i>
+                                            </a> -->
                                             <button class="btn btn-primary" onclick="window.open('resume.pdf', '_blank')">
                                                 Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i>&nbsp;&nbsp;&nbsp;
                                             </button>
@@ -263,7 +267,7 @@
                                                     <th scope="row"><i class="fa-solid fa-pen-to-square icon active-icon"></i></th>
                                                     <td>
                                                         <h5 class="card-title">Python Developer</h5>
-                                                        <p>Lorem ipsum, dolor sit amet sits consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque ipsum.</p>
                                                         <button type="button" class="btn custom-btn active-btn" style="font-size: 18px; cursor: default;"><b>Explore Services</b></button>
                                                     </td>
                                                 </tr>
@@ -281,7 +285,7 @@
                                                     <th scope="row"><i class="fa-solid fa-layer-group icon"></i></th>
                                                     <td>
                                                         <h5 class="card-title">Frontend Developer</h5>
-                                                        <p>Lorem ipsum, dolor sit amet sits consectetur adipisicing elit. Quia eos dicta atque omnis .</p>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque ipsum.</p>
                                                         <button type="button" class="btn custom-btn" style="font-size: 18px; cursor: default;"><b>Explore Services</b></button>
                                                     </td>
                                                 </tr>
@@ -486,21 +490,57 @@
 // }
 
 
+
+// const cards = document.querySelectorAll('.card');
+
+// // Function to handle interaction (hover or click)
+// function handleInteraction() {
+//     // Remove 'selected', 'active-btn', and 'active-icon' from all cards
+//     cards.forEach(function(c) {
+//         c.classList.remove('selected');
+//         const btn = c.querySelector('.custom-btn');
+//         const icon = c.querySelector('i');
+//         if (btn) btn.classList.remove('active-btn');
+//         if (icon) icon.classList.remove('active-icon');
+//     });
+
+//     // Add 'selected', 'active-btn', and 'active-icon' to the interacted card
+//     this.classList.add('selected');
+//     const btn = this.querySelector('.custom-btn');
+//     const icon = this.querySelector('i');
+//     if (btn) btn.classList.add('active-btn');
+//     if (icon) icon.classList.add('active-icon');
+// }
+
+// // Check if the device supports touch
+// const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+// cards.forEach(function(card) {
+//     if (isTouchDevice) {
+//         // Use click for touch devices
+//         card.addEventListener('click', handleInteraction);
+//     } else {
+//         // Use hover for non-touch devices
+//         card.addEventListener('mouseover', handleInteraction);
+//     }
+// });
+
+// // Set the middle card as active by default on page load
+// const middleCard = document.querySelector('.card.selected');
+// if (middleCard) {
+//     middleCard.classList.add('selected');
+//     const btn = middleCard.querySelector('.custom-btn');
+//     const icon = middleCard.querySelector('i');
+//     if (btn) btn.classList.add('active-btn');
+//     if (icon) icon.classList.add('active-icon');
+// }
+
+
+
+
 const cards = document.querySelectorAll('.card');
 
-// Check if the device supports touch
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-cards.forEach(function(card) {
-    if (!isTouchDevice) {
-        // Add hover effect only for non-touch devices
-        card.addEventListener('mouseover', handleInteraction);
-    } else {
-        // On touch devices, use click instead of hover
-        card.addEventListener('click', handleInteraction);
-    }
-});
-
+// Function to handle interaction (hover or click)
 function handleInteraction() {
     // Remove 'selected', 'active-btn', and 'active-icon' from all cards
     cards.forEach(function(c) {
@@ -519,7 +559,20 @@ function handleInteraction() {
     if (icon) icon.classList.add('active-icon');
 }
 
-// Set the middle card as active by default
+// Check if the device supports touch
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+cards.forEach(function(card) {
+    if (isTouchDevice) {
+        // Use click for touch devices
+        card.addEventListener('click', handleInteraction);
+    } else {
+        // Use hover for non-touch devices
+        card.addEventListener('mouseover', handleInteraction);
+    }
+});
+
+// Set the middle card as active by default on page load
 const middleCard = document.querySelector('.card.selected');
 if (middleCard) {
     middleCard.classList.add('selected');
