@@ -778,7 +778,7 @@
             padding-right: 250px;
         }
 
-        .custom-btn {
+        /* .custom-btn {
             background-color: transparent;
             color: rgb(0, 0, 0);
             border: none;
@@ -810,7 +810,7 @@
 
     .card {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
+    } */
     #height{
             height: auto;
             
@@ -949,7 +949,7 @@ ul li:last-child::after {
 }
 
 
- #i{
+ /* #i{
     color:#007bff;
      font-size: 18px;  
      background-color: #ebf4fd; 
@@ -983,19 +983,9 @@ ul li:last-child::after {
     font-size: 20px;
     padding: 10px;
     border-radius: 50%;
-}
+} */
 
 
-/* Custom CSS to remove hover effects */
-.no-hover:hover {
-    /* Ensures no hover effect on the card */
-    box-shadow: none;
-    background-color: white; /* Ensure background stays white */
-}
-
-.no-hover .btn {
-    cursor: default; /* Ensures cursor does not change on hover */
-}
 #b{
     margin-right: 250px;
    
@@ -1004,3 +994,52 @@ ul li:last-child::after {
     padding: 8px;
 }
 
+.icon {
+    color: #007bff;
+    font-size: 18px;  
+    background-color: #ebf4fd; 
+    padding: 10px; 
+    border: 2px transparent;
+    border-radius: 100%;
+    transition: color 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.card:hover .icon,
+.card.selected .icon,
+.active-icon {
+    color: white !important;
+    background-color: #007bff !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 50% !important;
+}
+
+.custom-btn {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+.custom-btn.active-btn,
+.custom-btn:focus,
+.custom-btn:active {
+    color: #007bff;
+    outline: transparent;
+    text-decoration: underline;
+    box-shadow: none;
+    text-underline-offset: 10px;
+}
+
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card.selected {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
