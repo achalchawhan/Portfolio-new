@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/port.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
 
   
 </head>
@@ -44,7 +44,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border-radius: 5px;"><b>X</b></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border-radius: 5px; font-family:inherit;"><b>X</b></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex flex-column">
@@ -75,7 +75,12 @@
                     
                     <button type="button" class="btn btn-primary">Book Call &nbsp; <i style="color:white; font-size: 15px;" class="fa-solid fa-chevron-right"></i></button>&nbsp;&nbsp;&nbsp;
                     
-                    <a href="resume.pdf" class="btn btn-primary" target="_blank"> Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i> &nbsp;&nbsp;&nbsp;</a>
+                    
+                    <button class="btn btn-primary" onclick="window.open('resume.pdf', '_blank')">
+                        Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i>&nbsp;&nbsp;&nbsp;
+                    </button>
+                    
+
                     
                 </div>            
                 <div class="col-6"  id="background">
@@ -123,12 +128,12 @@
                                             <p><b>Name:</b> Achal Pushpanand Chawhan </p>
                                         </td>
                                         <td>
-                                            <p><b>Location:</b>         Bhandara, Maharashtra</p>
+                                            <p><b>Location:</b> Bhandara, Maharashtra</p>
                                         </td>    
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left;"><p><b>Email:</b> aachalchawhan14@gmail.com</p></td>
-                                        <td style="text-align: left;"><p><b>Office:</b> Nagpur, Maharashtra</p></td>
+                                        <td ><p><b>Email:</b> aachalchawhan14@gmail.com</p></td>
+                                        <td ><p><b>Office:</b> Nagpur , Maharashtra</p></td>
                                     </tr>
                                     
                                 </tbody>
@@ -141,12 +146,15 @@
                                 <tbody>
                                     <tr>
                                         <td scope="row">
-                                            <a href="resume.pdf" class="btn btn-primary" target="_blank">
-                                                Download CV  &nbsp;&nbsp;<i style="color:white; font-size: 15px;" class="fa-solid fa-chevron-right"></i>
-                                            </a>
+                                            
+                                            <button class="btn btn-primary" onclick="window.open('resume.pdf', '_blank')">
+                                                Download CV &nbsp;&nbsp;<i style="color: rgb(255, 255, 255); font-size: 15px;" class="fa-solid fa-download"></i>&nbsp;&nbsp;&nbsp;
+                                            </button>
+                                            
                                         </td>
                                         <td><i style="color: black ; margin-top: 10px;" class="fa-solid fa-minus"></i></td>
-                                        <td style="margin-top:12px;">Follow me : &nbsp;
+                                        <td style="margin-top:12px; font-family:inherit;
+                                        font-weight: 700;">Follow me : &nbsp;
                                         <a href="https://www.linkedin.com/in/achal-chawhan-070ab924a"><i style="color: black; font-size: 20px;" class="fa-brands fa-linkedin"></i></a>  &nbsp;
                                         <a href="https://github.com/dashboard"><i  style="color: black; font-size: 20px;" class="fa-brands fa-github"></i></a> &nbsp;
                                         <a href="mailto:aachalchawhan14@gmail.com" onclick="displayEmail()">
@@ -183,7 +191,7 @@
                 <div class="col-6" id="hello13">
                     <br>
                     <br>
-                     <label style="font-weight: bold;">Web Developer</label><br>
+                     <label><b>Web Developer</b></label><br>
     
                          <div style="display: flex; align-items: center; gap: 10px;" id="width">
                             <div class="progress" style="flex-grow: 1; height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -194,7 +202,7 @@
                         </div>
                         <br><br>
      
-                        <label style="font-weight: bold;">Frontend Developer</label>
+                        <label><b>Frontend Developer</b></label>
                          <div style="display: flex; align-items: center; gap: 10px;"  id="width">
                             <div class="progress" style="flex-grow: 1; height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: 53%;"></div>
@@ -204,7 +212,7 @@
                         </div>
                         <br><br>
      
-                        <label style="font-weight: bold;">Python Developer</label>
+                        <label><b>Python Developer</b></label>
                          <div style=" display: flex; align-items: center; gap: 10px;"  id="width">
                             <div class="progress" style="flex-grow: 1; height: 10px;" role="progressbar" aria-label="Basic example" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: 68%;"></div>
@@ -224,91 +232,6 @@
         <div class="container-fluid" >
             <div class="row">
     
-                <!-- <div class="col-12" id="hello2">
-                    <h6>MY EXPERTISE</h6>
-                    <h1  style="font-size: 38px;"> Awesome Services For You</h1><br>
-                      <div class="row row-cols-1 row-cols-md-3" >
-                        <div class="col mb-4">
-                          <div class="card" id="height">
-                            
-                            <div class="card-body" style="text-align: justify;">
-                             <table class="table table-borderless">
-                                
-                                <tbody>
-                                  <tr>
-                                    <th scope="row"><i id="i" class="fa-solid fa-vector-square"></i></th>
-                                    <td>
-                                        <h5 class="card-title">Web Designer</h5>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum. </p>
-                                        <button type="button" class="btn custom-btn" style="font-size: 18px;"><b>Explore Services</b></button>
-    
-                                    </td>
-                                    
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card selected" id="height">
-                            
-                            
-                              <div class="card-body" style="text-align: justify;">
-    
-                                <table class="table table-borderless">
-                                  
-                                  <tbody>
-                                    <tr>
-                                      <th scope="row"><i id="i" class="fa-solid fa-pen-to-square active-icon"></i></th>
-                                      <td>
-                                          <h5 class="card-title">Web Designer</h5>
-                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum. </p>
-                                            <button type="button" class="btn custom-btn active-btn" style="font-size: 18px;"><b>Explore Services</b></button>
-      
-                                      </td>
-                                      
-                                    </tr>
-                                  </tbody>
-                                </table>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card" id="height">
-                            
-                            <div class="card-body" style="text-align: justify;">
-                              
-                              
-    
-                                <table class="table table-borderless">
-                                  
-                                  <tbody>
-                                    <tr>
-                                      <th scope="row"><i id="i" class="fa-solid fa-layer-group"></i></th>
-                                      <td>
-                                          <h5 class="card-title">Web Designer</h5>
-                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum. </p>
-                                          <button type="button" class="btn custom-btn" style="font-size: 18px;"><b>Explore Services</b></button>
-      
-                                      </td>
-                                      
-                                    </tr>
-                                  </tbody>
-                                </table>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                        
-                        
-                      </div>
-    
-                </div>
-                     -->
-
-
-
                      <div class="col-12" id="hello2">
                         <h6>MY EXPERTISE</h6>
                         <h1 style="font-size: 38px;"> Awesome Services For You</h1><br>
@@ -322,7 +245,7 @@
                                                     <th scope="row"><i class="fa-solid fa-vector-square icon"></i></th>
                                                     <td>
                                                         <h5 class="card-title">Web Designer</h5>
-                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
+                                                        <p>Lorem ipsum, dolor sit amet sits consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
                                                         <button type="button" class="btn custom-btn" style="font-size: 18px; cursor: default;"><b>Explore Services</b></button>
                                                     </td>
                                                 </tr>
@@ -339,8 +262,8 @@
                                                 <tr>
                                                     <th scope="row"><i class="fa-solid fa-pen-to-square icon active-icon"></i></th>
                                                     <td>
-                                                        <h5 class="card-title">Web Designer</h5>
-                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
+                                                        <h5 class="card-title">Python Developer</h5>
+                                                        <p>Lorem ipsum, dolor sit amet sits consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
                                                         <button type="button" class="btn custom-btn active-btn" style="font-size: 18px; cursor: default;"><b>Explore Services</b></button>
                                                     </td>
                                                 </tr>
@@ -357,8 +280,8 @@
                                                 <tr>
                                                     <th scope="row"><i class="fa-solid fa-layer-group icon"></i></th>
                                                     <td>
-                                                        <h5 class="card-title">Web Designer</h5>
-                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
+                                                        <h5 class="card-title">Frontend Developer</h5>
+                                                        <p>Lorem ipsum, dolor sit amet sits consectetur adipisicing elit. Quia eos dicta atque omnis ipsum.</p>
                                                         <button type="button" class="btn custom-btn" style="font-size: 18px; cursor: default;"><b>Explore Services</b></button>
                                                     </td>
                                                 </tr>
@@ -429,8 +352,8 @@
                     <div class="card1 bg-white text-black">
                         <img src="achal assets/contact-us-bg.jpg" id="img6" class="card-img" alt="...">
                         <div  class="card-img-overlay" style="padding: 70px;">
-                          <h5 class="card-title">Have any Project in Mind ?</h5>
-                          <p class="card-text" style="font-size: 35px; font-weight: bold;">Don't Be Hesitate To Contact  With  Me.</p>
+                          <h4 class="card-title">Have any Project in Mind ?</h4>
+                          <p class="card-text" style="font-size: 35px; font-weight: bold; font-family: 'Barlow Condensed', sans-serif;">Don't Be Hesitate To Contact  With  Me.</p>
                           <button type="button" class="btn btn-primary" style="float: right; cursor: default;" id="b">Get a Quote &nbsp; <i style="color:white; font-size: 15px;" class="fa-solid fa-chevron-right"></i> &nbsp; </button>
                         </div>
                     </div>
@@ -479,63 +402,7 @@
         </div>
     
     </section6>
-    <!-- <section7 id="kit">
     
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card bg-dark text-white">
-            <img src="images/back.jpg" id="img10" class="card-img" alt="...">
-            <div  class="card-img-overlay" style="padding: 50px; text-align: center;">
-                <img src="images/m1.jpg" id="img9">
-             
-              <p class="card-text" style="font-size: 35px; font-weight: 500;">Fear, greed and hope have destroyed more portfolio value than any recession or depression we have ever been through.
-                </p>
-              
-            </div>
-        </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card bg-dark text-white">
-            <img src="images/back.jpg" id="img10" class="card-img" alt="...">
-            <div  class="card-img-overlay" style="padding: 50px; text-align: center;">
-                <img src="images/m.jpg" id="img9">
-             
-              <p class="card-text" style="font-size: 35px; font-weight: 500;">As a portfolio manager, when do you start advising to your clients that they have some cryptocurrency exposure? When will there be an index fund, a mutual fund of cryptocurrencies? It will happen.
-                </p>
-              
-            </div>
-        </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card bg-dark text-white">
-            <img src="images/back.jpg" id="img10" class="card-img" alt="...">
-            <div  class="card-img-overlay" style="padding: 50px; text-align: center;">
-                <img src="images/m2.jpg" id="img9">
-             
-              <p class="card-text" style="font-size: 35px; font-weight: 500;">It doesn't help to follow every rise and fall of your portfolio. It's better to tune out the day-to-day shifts, in fact. But getting a handle on the larger picture will make you feel more secure, and that goes a long way in calming your fear.
-                </p>
-              
-            </div>
-        </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </button>
-          </div>
-
-</section7> -->
 
 </body>
 
@@ -544,7 +411,7 @@
 <div class="container-fluid" style="background-color: black;">
 <div class="row">
     <div class="col-12" id="contact"><h4 style="color: white;">CONTACT ME</h4>
-        <h1  style="font-size: 38px;">Got a Project ? Let's Talk !</h1>
+        <h1  style="font-size: 38px; ">Got a Project ? Let's Talk !</h1>
     </div>
 </div>
 <br>
