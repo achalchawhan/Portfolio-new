@@ -409,6 +409,7 @@
         padding-bottom: 120px;
         padding-left: 220px;
         padding-right: 10px;
+        height: 630px;
     }
     @media (max-width: 768px) {
         #hello, .col-6 {
